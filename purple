@@ -1,0 +1,139 @@
+@import url(//plusinsta.github.io/discord-plus/DiscordPlus-source.theme.css);
+
+/* I've commented most of these values so you can change them yourself.
+   If you're having trouble, or you want to do more than what these values
+   allow for, drop by our server and we can probably help you out! */
+
+
+:root {
+/* Background image. Falls back to accent color if invalid.
+   To use an image on your computer, send it anywhere on Discord,
+   then right-click and Copy Link, then paste it between the ()'s'. */
+--dplus-background: url(https://i2.wp.com/cdn.statically.io/img/data.whicdn.com/images/255018599/original.gif);
+
+/* Accent color, used to decorate the UI with colors. */
+--dplus-accent-ui:#812194;
+--dplus-accent-ui-hover: #bb0adf;
+
+/* Fonts */
+--dplus-font-ui: "Courier New", monospace;
+--dplus-font-body: "Courier New", monospace;
+--dplus-font-header: "Courier New", monospace;
+
+/* Round corner sizes, measured in pixel radius
+   Set avatar/server to 50% for circles
+   UI radius must be in pixels */
+--dplus-radius-ui: 20px;
+--dplus-radius-avatar: 100%;
+--dplus-radius-server: 40%;
+
+/* This determines margins and padding */
+--dplus-spacing-ui: 10px;
+--dplus-spacing-app: 15px;
+
+/* The Home icon */
+--dplus-icon-home-dark: url(https://media1.tenor.com/images/33196017a5099bab6a72f8308d4800e5/tenor.gif?itemid=13373843);
+--dplus-icon-home-light: url(https://p.favim.com/orig/2018/07/23/humour-lol-gaming-Favim.com-6010191.gif);
+/* Icon sizes */
+--dplus-icon-avatar-chat: 75px;
+--dplus-icon-avatar-list: 40px;
+--dplus-icon-avatar-profile: 80px;
+
+--dplus-icon-server-sidebar: 48px;
+--dplus-icon-server-list: 32px;
+
+/* Width of different elements */
+--dplus-channels-width: 240px;
+--dplus-members-width: 240px;
+--dplus-scrollbar-width: 10px;
+
+/* Blur percentage. Set to 0 to disable blur.
+   Performance may be affected by this option. */
+--dplus-blur-scale: 100;
+
+/* Background covers | Explanations below	*/
+--dplus-dark-bgc-ui-base: hsla(288, 83%, 7%, 0.74);
+--dplus-dark-bgc-ui-base-hover: hsla(288, 94%, 44%, 0.82);
+--dplus-dark-bgc-ui-card: hsla(306, 64%, 32%, 0.644);
+--dplus-dark-bgc-ui-card-hover: rgba(171, 0, 187, 0.5);
+--dplus-dark-bgc-chatmsg: hsla(294, 94%, 6%, 0.74);
+--dplus-dark-bgc-chatmsg-hover: hsla(294, 90%, 4%, 0.74);
+--dplus-dark-bgc-popout: hsla(294, 90%, 4%, 0.74);
+--dplus-dark-bgc-button: rgba(61, 3, 73, 0.5);
+--dplus-dark-bgc-button-hover: hsla(294, 90%, 4%, 0.74);
+--dplus-dark-bgc-server-button:  hsla(288, 100%, 20%, 0.493);
+--dplus-dark-bgc-server-button-hover:hsla(294, 90%, 4%, 0.74);
+
+--dplus-light-bgc-ui-base: hsla(295, 100%, 93%, 0.849);
+--dplus-light-bgc-ui-base-hover: hsla(0, 0%, 40%, 0.82);
+--dplus-light-bgc-ui-card: hsla(305, 68%, 79%, 0.644);
+--dplus-light-bgc-ui-card-hover: rgba(145, 78, 151, 0.5);
+--dplus-light-bgc-chatmsg: hsla(295, 100%, 93%, 0.849);
+--dplus-light-bgc-chatmsg-hover: hsla(297, 82%, 89%, 0.74);
+--dplus-light-bgc-popout: hsla(300, 100%, 92%, 0.74);
+--dplus-light-bgc-button: rgba(205, 41, 238, 0.699);
+--dplus-light-bgc-button-hover: rgba(42, 16, 48, 0.699);;
+--dplus-light-bgc-server-button:  hsla(288, 67%, 54%, 0.493);
+--dplus-light-bgc-server-button-hover:hsla(288, 61%, 42%, 0.493);
+}
+
+/* Explanations:
+* bgc is short for background cover / color
+* dark/light corresponds to the current active theme
+* ui-base is the main UI
+* ui-base-hover is used when hovering over clickable elements
+* ui-card is for cards like in server discovery
+* ui-card-hover is for hovering over cards
+* chatmsg governs messages in chat and the message box
+* chatmsg-hover is for hovering over a message
+* popout affects all popouts, like context menu, profiles, etc.
+* server-button affects server icons on the left side of the screen
+* server-button-hover affects servers icons when hovered over
+*/
+
+ 
+::-webkit-scrollbar {
+width: 13px;
+height: 13px;
+}
+
+::-webkit-scrollbar-track {
+background: #fff;
+box-shadow: inset 0 0 10px #f79ecb;
+border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+border-radius: 10px;
+background: #d63c98; 
+box-shadow: inset 0 0 6px #fff; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+background: #ff0098;
+
+}
+#container {
+    -webkit-animation: fadein 5s;
+}
+
+* a:hover{
+animation: changeColor 1s linear infinite;
+}
+
+@keyframes changeColor{
+    0%{color:#00ff22;}
+    10%{color:#ff0000;}
+    20%{color:#1100ff;}
+    30%{color:#ff00e1;}
+    40%{color:#f2ff00;}
+    60%{color:#00ff22;}
+    70%{color:#ff0000;}
+    80%{color:#1100ff;}
+    90%{color:#f2ff00;}
+    100%{color:#00ff22;}
+}
+
+* {cursor: url(http://www.rw-designer.com/cursor-view/30684.png), default !important;}
+
+* {cursor: url(https://ani.cursors-4u.net/symbols/sym-9/sym829.ani), url(https://ani.cursors-4u.net/symbols/sym-9/sym829.png), auto !important;}
